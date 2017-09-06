@@ -1,5 +1,6 @@
 const React = require('react')
 const ReactDom = require('react-dom')
+const ActionButton = require('./ActionButton')
 
 class LikesCounter extends React.Component {
   constructor(props) {
@@ -28,14 +29,4 @@ class LikesCounter extends React.Component {
   }
 }
 
-class ActionButton extends React.Component {
-  render() {
-    return (
-      <button className="ActionButton" onClick={this.props.handleClick}>
-        <span>{this.props.text}</span>
-      </button>
-    )
-  }
-}
-
-ReactDom.render(<LikesCounter initialCount={0}/>, document.getElementById('application'))
+module.exports = LikesCounter

@@ -1,2 +1,2 @@
 require('./main')
-require('./components/LikesCounter')
+require('./components/App')

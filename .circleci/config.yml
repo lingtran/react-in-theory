@@ -3,7 +3,11 @@ jobs:
   build:
     docker:
       - image: circleci/node:7.10
-      
+
+    branches:
+      only:
+        - from-scratch
+          
     steps:
       - checkout
 
